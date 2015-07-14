@@ -1,0 +1,69 @@
+<h1>
+    今日のランチは何にしよう？
+</h1>
+
+<div id="jQueryPush">
+    <a class="lunch_btn">
+    ランチを決める
+    </a>
+</div>
+
+
+
+<script type="text/javascript">
+var lists=[
+'<a class="food_menu" href="http://tabelog.com/tokyo/A1303/A130301/13049561/" target="_blank"><img class="food_img" src="http://image1-4.tabelog.k-img.com/restaurant/images/Rvw/17045/150x150_square_17045581.jpg">ねぎ油麺とチャーハン</a>',
+'<a class="food_menu" href="http://www.kujiraya.co.jp/dish/lunch.html" target="_blank"><img class="food_img" src="http://www.kujiraya.co.jp/dish/img/081.jpg">鯨からあげ定食</a>',
+'<a class="food_menu" href="http://tabelog.com/tokyo/A1303/A130301/13157320/" target="_blank"><img class="food_img" src="http://image1-4.tabelog.k-img.com/restaurant/images/Rvw/39079/150x150_square_39079763.jpg">夏季限定 冷やし麺</a>',
+'<a class="food_menu" href="http://r.gnavi.co.jp/b138100/lunch/" target="_blank"><img class="food_img" src="http://uds.gnst.jp/rest/img/hhrr91t40000/s_005r.jpg?t=1405300839">【大阪鶴橋 名物ランチ】お好み焼き定食★</a>',
+'<a class="food_menu" href="http://tabelog.com/tokyo/A1303/A130301/13003366/" target="_blank"><img class="food_img" src="http://image1-3.tabelog.k-img.com/restaurant/images/Rvw/38394/150x150_square_38394934.jpg">ステーキ丼</a>',
+'<a class="food_menu" href="http://www.ondoruyaki.com/" target="_blank"><img class="food_img" src="http://uds.gnst.jp/rest/img/7h66m0jk0000/s_005d.jpg?t=1392886513">おんどる - イベリコ豚スタミナ丼</a>',
+'<a class="food_menu" href="http://tabelog.com/tokyo/A1303/A130301/13080893/" target="_blank"><img class="food_img" src="http://image1-2.tabelog.k-img.com/restaurant/images/Rvw/3608/150x150_square_3608277.jpg">大漁！マグロ丼</a>'
+];
+
+  function rndSet(){
+  var rNo = Math.floor(Math.random() * lists.length);
+  document.write(lists[rNo]);
+  lists.splice(rNo,1);
+}
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 「id="jQueryBox"」を非表示
+    $(".jQueryBox").css("display", "none");
+ 
+    // 「id="jQueryPush"」がクリックされた場合
+    $("#jQueryPush").click(function(){
+        // 「id="jQueryBox"」の表示、非表示を切り替える
+        $(".jQueryBox").show();
+    });
+});
+</script>
+
+
+<div class="jQueryBox">
+<table>
+    <tbody>
+      <tr>
+        <td>
+            <script type="text/javascript">rndSet();</script>
+        </td>
+        
+        <td>
+            <script type="text/javascript">rndSet();</script>
+        </td>
+        
+        <td>
+            <script type="text/javascript">rndSet();</script>
+        </td>
+      </tr>
+    </tbody>
+</table>
+</div>
+
+
+<div class="jQueryBox" >
+<p class="message2">さあ、今日のランチはこの3つから、即断即決。</p>
+</div>

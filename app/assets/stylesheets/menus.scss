@@ -1,0 +1,51 @@
+// Place all the styles related to the menus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+    color: #333333;
+    background: #F5EEE6;
+}
+
+h1{
+    font-weight: bold;
+    color: #333333;
+}
+
+.lunch_btn{
+    text-decoration: none;
+    background: #DF2312;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.lunch_btn:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.food_img{
+    width: 300px;
+    height: 240px;
+}
+
+.food_menu{
+    text-decoration: none;
+}
+
+.food_menu:hover{
+    opacity: .8;
+}
+
+table{
+    margin-top: 70px;
+}
+
+.message2{
+    font-style: italic;
+    padding-top: 20px;
+    color: #00af3a;
+}
